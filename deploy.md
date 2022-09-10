@@ -15,7 +15,7 @@ Se exponen ambos via Apache, en dos direcciones diferentes (por default, "/" y "
 
 ## Repositorio de deploy
 
-En el repositorio [deploy](https://github.com/fiuba-laboral-v2/deploy) hay scripts que se pueden correr en cualquier máquina, y se conectan al servidor via ssh:
+En el repositorio [deploy](https://github.com/fiuba-course-admin/deploy) hay scripts que se pueden correr en cualquier máquina, y se conectan al servidor via ssh:
 * `NODE_ENV=production yarn deploy:setup`
 * `NODE_ENV=production yarn deploy:backend`
 * `NODE_ENV=production yarn deploy:frontend`
@@ -36,7 +36,7 @@ Pasos a seguir:
 4. Pararse sobre la carpeta raíz del repo deploy
 5. Instalar las dependencias del repo de deploy: `yarn install`
 6. Ejecutar el comando `NODE_ENV=production yarn deploy:setup`
-7. Modificar en el server el archivo `~/fiuba-laboral-v2/back-end/.env`, agregar variables tal que quede:
+7. Modificar en el server el archivo `~/fiuba-course-admin/back-end/.env`, agregar variables tal que quede:
    ```
     NODE_ENV=production
     DATABASE_URL=postgresql://user:password@netlocation:port/dbname
