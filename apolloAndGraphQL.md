@@ -20,7 +20,7 @@ Si no se especifica, se obtiene el atributo con el mismo nombre del field
 no dar función `resolve` equivale a `resolve: company => company.slogan`).
 
 Para el manejo de permisos se usa
-[GraphQL Shield](https://github.com/maticzav/graphql-shield/blob/master/README.md): en el archivo `permissionShield.ts` se declaran los permisos
+[GraphQL Shield](https://github.com/maticzav/graphql-shield/blob/main/README.md): en el archivo `permissionShield.ts` se declaran los permisos
 necesarios para acceder a
 una query, mutation o un field de un type. Si no se declara, es público.
 
