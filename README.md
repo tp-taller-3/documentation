@@ -2,6 +2,9 @@
 
 TP Taller 3, FIUBA, 2022
 
+### Setup inicial
+* [Guía paso a paso](setupGuide.md)
+
 ### Introducción a los repositorios
 * [GraphQL y Apollo](apolloAndGraphQL.md)
 * [Comandos de yarn/npm de los repositorios](yarnCommands.md)
