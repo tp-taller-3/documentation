@@ -22,7 +22,7 @@ En el repositorio [deploy](https://github.com/fiuba-course-admin/deploy) hay scr
 
 En la máquina que vayan a correr los script se asumen instalados:
 * Linux
-* Node version manager (o nvm, [instrucciones de instalación](https://github.com/nvm-sh/nvm#install--update-script)), e instalado vía nvm, node v14.15.0.
+* Node version manager (o nvm, [instrucciones de instalación](https://github.com/nvm-sh/nvm#install--update-script)), e instalado vía nvm, node v14.20.0.
 * Yarn: `sudo apt install --no-install-recommends yarn`
 
 Pasos a seguir:
