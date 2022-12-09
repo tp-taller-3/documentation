@@ -23,6 +23,4 @@ TP Taller 3, FIUBA, 2022
 * [Integración de la aplicación con los datos del SIU Guaraní](siuGuaraniIntegration.md)
 
 ### Utilidades para desarrollo y gestión
-* [Tablas de log de acciones del administrador](approvalEvents.md)
-* [Números de teléfono de empresa](companyPhoneNumbers.md)
 * [Convenciones de desarrollo seguidas](conventions/conventions.md)
