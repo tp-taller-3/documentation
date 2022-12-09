@@ -20,7 +20,6 @@ TP Taller 3, FIUBA, 2022
 * [Email de la secretaria de los administradores](secretaryEmail.md)
 
 ### Servicios externos
-* [Servicio de Email](EmailService.md)
 * [Integración de la aplicación con los datos del SIU Guaraní](siuGuaraniIntegration.md)
 
 ### Utilidades para desarrollo y gestión

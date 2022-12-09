@@ -14,7 +14,7 @@ como `compontent` y `container` dentro de `NavBar`.
 * Archivos y carpetas:
     * Para componentes react y types de graphql usar CamelCase.
 
-* Las carpetas de los modelos en singular (`Company`). Dentro de la carpeta se pueden guardar los 
+* Las carpetas de los modelos en singular (`Semester`). Dentro de la carpeta se pueden guardar los 
 archivos `Model.ts`, `Repository.ts`, `Interface.ts`, etc.
 
 * Los modelos se llaman sin ningún sufijo ni prefijo.
@@ -22,10 +22,9 @@ archivos `Model.ts`, `Repository.ts`, `Interface.ts`, etc.
 * Los tipos de `GraphQL` se guardan en una carpeta `Types` dentro de la carpeta de la entidad correspondiente
     * Esta tiene un index con un array y todos los types
 
-* Los tipos de `GraphQL` se nombran como: **GraphQL&lt;TypeName&gt;**. Ejemplo: `GraphQLCompany`
+* Los tipos de `GraphQL` se nombran como: **GraphQL&lt;TypeName&gt;**. Ejemplo: `GraphQLSemester`
 
 * El ancho mínimo de viewport que soportamos es de 290px inclusive
 
 * Todas las Queries y Mutations de Graphql deben ser guardadas en constantes en mayúsculas al momento de ser usadas.
 
-## Convenciones del [Front End](Frontend.md)
