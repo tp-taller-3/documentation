@@ -1,33 +1,31 @@
 # GraphQL y Apollo
 
 [GraphQL](https://graphql.org/learn/)
-es la única interfaz entre el backend y el frontend.
+es la principal interfaz entre el backend y el frontend. Para la subida del archivo, se usó REST http clásico.
 
 ## Apollo Server (back-end)
 
 El backend utiliza la librería
 [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
-para declarar el mapping, compuesto por types (como `Company`),
-mutations (como `updateCurrentCompany`) y queries (como `getCompanyByUuid`).
+para declarar el mapping, compuesto por types (como `Semester`),
+mutations (como `deleteSemester`) y queries (como `getSemesterByUuid`).
 Expone el único endpoint `/graphql`.
 
 Tanto los types como las queries y las mutations se declaran con una función
 [resolver](https://www.apollographql.com/docs/apollo-server/data/resolvers/)
-(por ejemplo, `resolve` en `GraphQLCompany -> fields -> photos`).
+(por ejemplo, `resolve` en `GraphQLAdmin -> fields -> user`).
 
 Si no se especifica, se obtiene el atributo con el mismo nombre del field
-(por ejemplo, para resolver `GraphQLCompany -> fields -> slogan`
-no dar función `resolve` equivale a `resolve: company => company.slogan`).
+(por ejemplo, para resolver `GraphQLAdmin -> fields -> secretary`
+no dar función `resolve` equivale a `resolve: admin => admin.secretary`).
 
 Para el manejo de permisos se usa
 [GraphQL Shield](https://github.com/maticzav/graphql-shield/blob/main/README.md): en el archivo `permissionShield.ts` se declaran los permisos
 necesarios para acceder a
 una query, mutation o un field de un type. Si no se declara, es público.
 
-Por ejemplo, en `companyPermissions`: `Query.getCompanies` solo es
-accesible por admins, `Mutation.updateCurrentCompany` solo es accesible
-por usuarios de empresa y `Company.users` es accesible por tanto
-admins como usuarios de empresa.
+Por ejemplo, en `adminPermissions`: `Query.getAdmins` solo es
+accesible por admins.
 
 ## Apollo Client (front-end)
 
@@ -41,8 +39,8 @@ y son utilizadas por medio de
 propios, que utilizan los
 [hooks que brinda Apollo Client](https://www.apollographql.com/docs/react/api/react/hooks/).
 
-Por ejemplo, el componente `CompanyProfile` llama al hook
-`useCompanyByUuid` con el parámetro `uuid` obtenido de la url.
+Por ejemplo, el componente `DeleteSemesterActionContainer` llama al hook
+`useSemesterByUuid` con el parámetro `uuid` obtenido de la url.
 Dicho hook delega el trabajo al hook `useQuery`,
 dándole el archivo `.graphql` y settings correspondientes.
 Dicho hook da una respuesta del tipo `{ data, loading, error }` al componente.
