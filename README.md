@@ -15,9 +15,6 @@ TP Taller 3, FIUBA, 2022
 
 ### Mantenimiento
 * [Traducciones](translations.md)
-* [Carreras](careers.md)
-* [Notificaciones](notifications.md)
-* [Email de la secretaria de los administradores](secretaryEmail.md)
 
 ### Servicios externos
 * [Integración de la aplicación con los datos del SIU Guaraní](siuGuaraniIntegration.md)
