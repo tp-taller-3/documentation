@@ -7,6 +7,7 @@ TP Taller 3, FIUBA, 2022
 
 ### Introducción a los repositorios
 * [GraphQL y Apollo](apolloAndGraphQL.md)
+* [Upload del CSV](uploadCsv.md)
 * [Comandos de yarn/npm de los repositorios](yarnCommands.md)
 
 ### Deploy
@@ -15,9 +16,6 @@ TP Taller 3, FIUBA, 2022
 
 ### Mantenimiento
 * [Traducciones](translations.md)
-
-### Servicios externos
-* [Integración de la aplicación con los datos del SIU Guaraní](siuGuaraniIntegration.md)
 
 ### Utilidades para desarrollo y gestión
 * [Convenciones de desarrollo seguidas](conventions/conventions.md)
